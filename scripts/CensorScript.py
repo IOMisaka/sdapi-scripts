@@ -33,7 +33,7 @@ def check_safety(x_image):
 
 def mosaic(img:Image):
     s = img.size
-    img = img.resize((17,17))
+    img.thumbnail((17,17))
     img = img.resize(s,Image.NEAREST)
     return img
 
